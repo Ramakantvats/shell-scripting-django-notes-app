@@ -13,7 +13,6 @@ install_dependency(){
 enable_package(){
  echo "Enabling the packages"
  sudo systemctl enable docker
- sudo systemctl enable nginx
 
  #Allow current user ownership of docker socket so no need to use sudo every time to run docker cmd.
  sudo chown $USER /var/run/docker.sock
